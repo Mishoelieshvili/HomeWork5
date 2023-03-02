@@ -20,44 +20,8 @@ public class Program
         }
         #endregion
 
-        #region Task2 
-        //UNDONE 
+        #region Task2
         {
-            Console.Write("Enter the first number: ");
-            var a = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter the second number: ");
-            var b = Convert.ToDouble(Console.ReadLine());
-
-            var x = a;
-            var y = b;
-
-            Console.WriteLine(a + b);
-            Console.WriteLine(b - a);
-            Console.WriteLine(a * b);
-            Console.WriteLine(b / a);
-
-            switch (b / a)
-            {
-                case '/':
-                    if (a == 0)
-                    {
-                        Console.WriteLine("Error 0 unbale to divide.");
-                    }
-                    else if (b == 0)
-                    {
-                        Console.WriteLine("Errpr 0 smallest number is 0.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Result: " + (a / b));
-                    }
-                    break;
-
-            }
-            #endregion
-
-            #region Task3
             Console.WriteLine("Enter two numbers:");
             var z = Convert.ToInt32(Console.ReadLine());
             var c = Convert.ToInt32(Console.ReadLine());
@@ -78,12 +42,32 @@ public class Program
         }
         #endregion
 
+
+        #region task3
+        {
+            Console.Write("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+           
+            Console.WriteLine("Multiplication table for " + num1);
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(num1 + " x " + i + " = " + (num1 * i));
+            }
+        }
+        #endregion
+
+        #region task4
+        {   //მიბეჭდავს თვითონ რიცხვს დასაწყისში და ბოლოში თავისივე კვადრატს
+            Console.WriteLine("Enter a number: ");
+            int n = int.Parse(Console.ReadLine());
+            
+            for (int i = 1; i <= n; i++) {
+                int square = i * i;
+                Console.WriteLine(square);
+            }
+
+        }
+        #endregion
     }
 }
-
-
-
-
-
-
 
