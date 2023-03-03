@@ -68,6 +68,23 @@ public class Program
 
         }
         #endregion
+
+        #region task5 
+        {
+            Console.WriteLine("Enter two numbers:");
+            var a = double.Parse(Console.ReadLine());
+            var b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(a + b);
+            Console.WriteLine(a - b);
+            Console.WriteLine(a * b);
+
+            if (a == 0 || b == 0)
+            {
+                Console.WriteLine("Not Allowed To Divide By Zero");
+            }
+        }
+        #endregion
     }
 }
 
